@@ -234,9 +234,7 @@ You can change between the *SLAM* and *Localization mode* using the GUI of the m
 
 # 10. Running on your own camera
 
-    ```
     ./Examples/Monocular/mono_test Vocabulary/ORBvoc.txt Examples/Monocular/TUM1.yaml 0
-    ```
 
 Replace the last number 0 to any camera index to use other camera.
 Number 0 means using the default web cam.
