@@ -232,6 +232,15 @@ You will need to create a settings file with the calibration of your camera. See
 # 9. SLAM and Localization Modes
 You can change between the *SLAM* and *Localization mode* using the GUI of the map viewer.
 
+# 10. Running on your own camera
+
+    ```
+    ./Examples/Monocular/mono_test Vocabulary/ORBvoc.txt Examples/Monocular/TUM1.yaml 0
+    ```
+
+Replace the last number 0 to any camera index to use other camera.
+Number 0 means using the default web cam.
+
 ### SLAM Mode
 This is the default mode. The system runs in parallal three threads: Tracking, Local Mapping and Loop Closing. The system localizes the camera, builds new map and tries to close loops.
 

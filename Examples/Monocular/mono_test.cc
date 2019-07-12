@@ -44,7 +44,7 @@ int main(int argc, char **argv)
 
     clock_t t;
 
-    cv::VideoCapture cap(1); // open the second camera
+    cv::VideoCapture cap( atoi (argv[3])); // open the corresponding camera
     if(!cap.isOpened())  // check if we succeeded
         return -1;
 
